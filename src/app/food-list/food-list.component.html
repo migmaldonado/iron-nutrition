@@ -25,7 +25,7 @@
     </div>
   </div>
 
-  <ul class="food-list">
+  <ul [dragula]='"lists"' [dragulaModel]="lists" class="food-list">
     <li class="single-food" *ngIf="isEditing">
       <img [src]="newFoodImage">
       <h3 class="food-name">
